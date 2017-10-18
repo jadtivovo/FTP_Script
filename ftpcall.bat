@@ -12,25 +12,25 @@ goto :end
 :copyrename
 IF EXIST %3\%4 REN %3\%4 %5
 shift
-C:\Users\tivon.yuen\Desktop\winscp_temp\WinSCP.exe /console /command "open %5://%6:%7@%8:%9 -hostkey="*"" "cd %1" "lcd %2" "get %3" "exit" /log="F:\winpos\misctool\ftpe\log!Y!M!D.log"
+C:\Users\userName\Desktop\winscp_temp\WinSCP.exe /console /command "open %5://%6:%7@%8:%9 -hostkey="*"" "cd %1" "lcd %2" "get %3" "exit" /log="F:\winpos\misctool\ftpe\log!Y!M!D.log"
 GOTO :end
 
 :moverename
 IF EXIST %2\%4 REN %2\%4 %5
 shift
-C:\Users\tivon.yuen\Desktop\winscp_temp\WinSCP.exe /console /command "open %5://%6:%7@%8:%9 -hostkey="*"" "cd %2" "lcd %1" "put %3" "exit" /log="F:\winpos\misctool\ftpe\log!Y!M!D.log"
+C:\Users\userName\Desktop\winscp_temp\WinSCP.exe /console /command "open %5://%6:%7@%8:%9 -hostkey="*"" "cd %2" "lcd %1" "put %3" "exit" /log="F:\winpos\misctool\ftpe\log!Y!M!D.log"
 GOTO :end
 
 :copydelete
 IF EXIST %3\%4 DEL %3\%4
 shift
-C:\Users\tivon.yuen\Desktop\winscp_temp\WinSCP.exe /console /command "open %5://%6:%7@%8:%9 -hostkey="*"" "cd %1" "lcd %2" "get %3" "exit" /log="F:\winpos\misctool\ftpe\log!Y!M!D.log"
+C:\Users\userName\Desktop\winscp_temp\WinSCP.exe /console /command "open %5://%6:%7@%8:%9 -hostkey="*"" "cd %1" "lcd %2" "get %3" "exit" /log="F:\winpos\misctool\ftpe\log!Y!M!D.log"
 GOTO :end
 
 :movedelete
 IF EXIST %2\%4 DEL %2\%4
 shift
-C:\Users\tivon.yuen\Desktop\winscp_temp\WinSCP.exe /console /command "open %5://%6:%7@%8:%9 -hostkey="*"" "cd %2" "lcd %1" "put %3" "exit" /log="F:\winpos\misctool\ftpe\log!Y!M!D.log"
+C:\Users\userName\Desktop\winscp_temp\WinSCP.exe /console /command "open %5://%6:%7@%8:%9 -hostkey="*"" "cd %2" "lcd %1" "put %3" "exit" /log="F:\winpos\misctool\ftpe\log!Y!M!D.log"
 GOTO :end
 
 :end
